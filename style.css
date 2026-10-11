@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin: 5px 0 28px;
+}
+
+section > button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 3px 8px;
+    margin-bottom: 13px;
+}
+
+#blog-posts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+.blog-post {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 18px 19px;
+    min-height: 177px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-post h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.blog-post p {
+    font-size: 19px;
+    margin: 15px 0 20px;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.edit-title-btn,
+.edit-content-btn,
+.delete-post-btn,
+.blog-post button {
+    font-size: 16px;
+    padding: 2px 7px;
+    margin-right: 8px;
+    background-color: #e9e9ed;
+    border: 1px solid #a9a9b3;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    #blog-posts-container {
+        grid-template-columns: 1fr;
+    }
+}
